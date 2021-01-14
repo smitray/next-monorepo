@@ -1,10 +1,14 @@
 {
   "name": "next-monorepo",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Monorepo boilerplate for next.js, mikro-orm, type-graphql, graphql-codegen and urql",
-  "main": "index.js",
+  "main": "packages/server/dist/index.js",
   "scripts": {
-    "test": "jest"
+    "scaffold": "lerna create",
+    "dev:server": "lerna run dev --scope=@monorepo/server",
+    "build": "lerna run build",
+    "start": "NODE_ENV=production lerna run start --scope=@monorepo/server",
+    "release": "lerna version"
   },
   "repository": {
     "type": "git",
@@ -37,6 +41,7 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@types/jest": "^26.0.19",
     "@types/node": "^14.14.16",
+    "@types/webpack": "^4.41.26",
     "@typescript-eslint/eslint-plugin": "^4.11.0",
     "@typescript-eslint/parser": "^4.11.0",
     "cz-conventional-changelog": "^3.3.0",
@@ -55,9 +60,9 @@
     "eslint-plugin-unicorn": "^24.0.0",
     "husky": "^4.3.6",
     "jest": "^26.6.3",
+    "lerna": "^3.22.1",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
-    "standard-version": "^9.0.0",
     "typescript": "^4.1.3"
   },
   "husky": {
