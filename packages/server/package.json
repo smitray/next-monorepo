@@ -12,6 +12,7 @@
   "homepage": "https://github.com/smitray/next-monorepo/tree/master/packages/server#readme",
   "license": "GPL-3.0-or-later",
   "main": "dist/index.js",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/smitray/next-monorepo.git"
