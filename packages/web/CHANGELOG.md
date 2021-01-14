@@ -1,0 +1,10 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 0.2.0 (2021-01-14)
+
+### Features
+
+- **base:** bsss ([83076fb](https://github.com/smitray/next-monorepo/commit/83076fbe293389a3082afb961a9c0e5fc0acc888))
